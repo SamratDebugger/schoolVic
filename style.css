@@ -1,0 +1,111 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* CSS Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.max-width {
+    max-width: 1440px;
+
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS Variables */
+:root {}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.menuLeft {
+    display: flex;
+    align-items: center;
+}
+
+.ham {
+    margin-right: 15px;
+    display: none;
+}
+
+.menuLeft ul {
+    display: flex;
+}
+
+.menuLeft ul li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.menuLeft ul li a {
+    text-decoration: none;
+
+}
+
+/* .menuRight {
+    display: flex;
+    align-items: center;
+} */
+
+.menuRight a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.menuRight button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:768px) {
+
+    /* Navigation Bar */
+    .ham {
+        display: block;
+    }
+
+    .menuLeft ul li {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {}
+
+@media screen and (max-width:480px) {
+
+    /* Navigation Bar */
+    .menuLeft h2 {
+        font-size: 14px;
+    }
+
+    .menuRight a {
+        font-size: 8px;
+    }
+
+
+    .menuRight button {
+        padding: 2px 5px;
+        font-size: 8px;
+
+
+
+    }
+}

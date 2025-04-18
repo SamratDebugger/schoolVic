@@ -9,6 +9,16 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
 .max-width {
     max-width: 1440px;
 
@@ -17,6 +27,10 @@ body {
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+.default-padding {
+    padding: 20px;
 }
 
 /* CSS Variables */
@@ -30,11 +44,18 @@ body {
 
 
 /* Navigation Bar */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-between;
+
+
 
 }
 
@@ -46,6 +67,8 @@ body {
 .ham {
     margin-right: 15px;
     display: none;
+    border: none;
+    background: none;
 }
 
 .menuLeft h2 {
@@ -75,6 +98,40 @@ body {
     color: var(--light-text-color);
     background-color: var(--primary-color);
 
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./assets/img/boy-background.png);
+}
+
+.heroLeft h6 {
+    color: var(--primary-color);
+}
+
+.heroLeft h1 {
+    max-width: 250px;
+}
+
+.heroLeft p {
+    max-width: 300px;
+}
+
+.heroLeft button {
+    border: none;
+    padding: 10px 20px;
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.heroLeft a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border: var(--primary-color);
 }
 
 /* Responsive Design */

@@ -24,6 +24,7 @@ body {
     --text-color: #252B42;
     --second-text-color: #737373;
     --primary-color: #96BB7C;
+    --light-text-color: #FFFFFF;
 
 }
 
@@ -47,6 +48,10 @@ body {
     display: none;
 }
 
+.menuLeft h2 {
+    color: var(--text-color);
+}
+
 .menuLeft ul {
     display: flex;
 }
@@ -54,27 +59,21 @@ body {
 .menuLeft ul li {
     margin-right: 20px;
     list-style: none;
+
 }
 
 .menuLeft ul li a {
     text-decoration: none;
+    color: var(--second-text-color);
 
-}
-
-/* .menuRight {
-    display: flex;
-    align-items: center;
-} */
-
-.menuRight a {
-    text-decoration: none;
-    margin-right: 20px;
 }
 
 .menuRight button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
 
 }
 
@@ -83,6 +82,10 @@ body {
 @media screen and (max-width:768px) {
 
     /* Navigation Bar */
+    .navbar {
+        padding: 10px;
+    }
+
     .ham {
         display: block;
     }
@@ -97,17 +100,16 @@ body {
 @media screen and (max-width:480px) {
 
     /* Navigation Bar */
+
     .menuLeft h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .menuRight a {
-        font-size: 12px;
-    }
+
 
 
     .menuRight button {
-        padding: 5px 10px;
+        padding: 6px 12px;
         font-size: 12px;
 
 
